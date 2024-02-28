@@ -1,0 +1,30 @@
+@import "../../../../abstract";
+
+.black_background{
+    background-color: #D9D9D9;
+}
+.primary_background_color{
+    background-color: $color-primary;
+}
+.test{
+    width: 80%;
+}
+.center_content{
+    text-align:center;
+}
+.align_form{
+    width: 80%;
+    margin: 0 auto;
+}
+.align_form1{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+.justify_center{
+    justify-content: center;
+}
+.align_button{
+    width: 100%;
+}

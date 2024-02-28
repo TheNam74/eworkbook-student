@@ -1,0 +1,17 @@
+@import "../../../../abstract";
+@import '/src/breakpoints/breakpoints.scss';
+
+.anchor_color {
+    background-color: white;
+}
+
+.anchor_a_style {
+    font-size: 150%;
+    font-weight: bold;
+
+    @include media("<=md") {
+        font-size: 70%;
+        position: relative;
+        top: 3px;
+    }
+}

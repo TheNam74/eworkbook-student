@@ -1,0 +1,69 @@
+@import 'src/abstract';
+@import '/src/breakpoints/breakpoints.scss';
+
+
+.fill-blank-questions{
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    @include media("<=lg"){
+        //flex-direction: column;
+        &__question{
+
+            &__image{
+                img{
+                    width: 90px;
+                    height: 90px;
+                    border-radius: 5px;
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                }
+            }
+        }
+    }
+
+    &__question{
+        max-width: 40%;
+        &__text{
+            background-color: $color-primary;
+            color: white;
+        }
+
+        &__image {
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                border-radius: 5px;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            }
+        }
+    }
+
+    &__answer{
+        max-width: 50%;
+        &__text{
+            background-color: $color-third-primary;
+            color: black;
+        }
+    }
+}
+
+.text{
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    margin: 10px 0;
+    text-align: center;
+    line-height: 13px;
+}
+.correct-answer{
+    // background-color: rgba(0, 180, 0, 0.521);
+    border: 4px solid green;
+}
+.wrong-answer{
+    // background-color: rgba(253, 0, 0, 0.521);
+    border: 4px solid rgb(181, 0, 0);
+}

@@ -1,0 +1,55 @@
+@import '/src/abstract';
+@import '/src/breakpoints/breakpoints.scss';
+
+.container{
+    display: flex;
+    @include media("<=lg"){
+        flex-direction: column;
+        align-items: center;
+    }
+    .image{
+        width: 50%;
+        img{
+            width: 100%;
+        }
+        @include media("<=lg"){
+            width: 80%;
+        }
+    }
+    .content{
+        display: flex;
+        //padding: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: auto;
+        margin-top: 0;
+        @include media("<=lg"){
+            align-items: center;
+        }
+        &__header{
+            color: $color-primary;
+            font-size: 25px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        &__text{
+            color: $color-odd-text;
+            font-size: 15px;
+            font-weight: 300;
+            @include media("<=lg"){
+                width: 60%;
+                margin-bottom: 100px;
+            }
+        }
+    }
+}
+
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    @include media("<=lg"){
+        flex-direction: column;
+        align-items: center;
+    }
+}

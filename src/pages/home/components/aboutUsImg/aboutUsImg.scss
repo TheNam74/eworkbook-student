@@ -1,0 +1,26 @@
+@import '/src/abstract';
+
+.about-us-img{
+    height: 100%;
+}
+
+.bg{
+    margin: 10px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.bg-img-1{
+    background-image: url("../../../../../public//assets/images/abt1.jpg");
+}
+.bg-img-2{
+    background-image: url("../../../../../public//assets/images/abt2.jpg");
+}
+.bg-img-3{
+    background-image: url("../../../../../public//assets/images/abt3.jpg");
+}
+.bg-img-4{
+    background-image: url("../../../../../public//assets/images/abt4.jpg");
+}

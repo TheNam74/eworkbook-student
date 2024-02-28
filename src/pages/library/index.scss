@@ -1,0 +1,79 @@
+@import '../../abstract';
+
+.card {
+  height: 395px;
+  width: 250px;
+  border-radius: 20px;
+  border: 3px solid #d2d2d2;
+  color: $color-primary;
+  overflow: hidden;
+
+  &__content {
+    padding: 0 20px;
+  }
+
+  // margin-bottom: 20px;
+  &__img {
+    width: 284px;
+  }
+
+  &__title__con {
+    height: auto;
+
+    .card-name {
+      color: $color-primary;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin: 10px 0;
+
+      width: 238px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &__description__con {
+    height: 84px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+
+    .card-des {
+      font-weight: 300;
+    }
+  }
+
+  &__level__con {
+    height: auto;
+
+    .card-level {
+      margin-top: 10px;
+      font-weight: 500;
+    }
+  }
+}
+
+// .card:hover {
+//   scale: 1.05 !important;
+//   box-shadow: 5px 5px 10px #656565;
+//   cursor: pointer;
+// }
+
+.filter {
+  row-gap: 16px;
+  justify-content: center;
+  margin-top: 20px;
+
+  &__criteria {
+    width: 33%;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.pagination {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+}

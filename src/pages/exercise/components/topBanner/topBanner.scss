@@ -1,0 +1,41 @@
+@import '/src/breakpoints/breakpoints.scss';
+@import '/src/abstract';
+
+.book-background {
+    height: 100%;
+    position: relative;
+    &__bot {
+      height: 80%;
+      width: 80%;
+      position: absolute;
+      bottom: 0%;
+      border-radius: 10px;
+    }
+  
+    &__top {
+      height: 80%;
+      width: 80%;
+      position: absolute;
+      right: 0%;
+      border-radius: 10px;
+    }
+  
+    &__mid {
+      height: 80%;
+      width: 80%;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      background-color: rgba(255, 255, 255, 0);
+      border-radius: 20px;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      &__image {
+        height: 100%;
+        width: auto;
+        border-radius: 20px;
+      }
+    }
+  }

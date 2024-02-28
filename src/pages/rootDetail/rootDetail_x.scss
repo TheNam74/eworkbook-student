@@ -1,0 +1,204 @@
+@import '/src/breakpoints/breakpoints.scss';
+@import '/src/abstract';
+
+.root-material {
+
+
+    &__banner {
+        display: flex;
+        justify-content: space-between;
+
+        @include media("<=md") {
+            flex-direction: column;
+        }
+
+        .image-show-just-on-mobile {
+            @include media(">md") {
+                display: none;
+            }
+
+            @include media("<=md") {
+                display: block;
+                width: 100%;
+                padding-bottom: 0px;
+                margin-bottom: 0px;
+                border: 0px;
+
+            }
+
+            width: 100%;
+            overflow: hidden;
+
+            .image-container {
+                img {
+                    width: 100%;
+                }
+            }
+
+        }
+
+        &__left {
+            // old code
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 35px;
+            background-color: $color-primary;
+            color: white;
+            font-size: 30px;
+            position: relative;
+
+            @include media("<=md") {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .name {
+                &__cefr {
+                    margin-left: 10px;
+                    font-style: italic;
+                }
+            }
+
+            .description {
+                font-size: 15px;
+                font-style: italic;
+                font-weight: 300;
+            }
+
+            .progress-group {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                @include media("<=md") {
+                    flex-direction: row;
+                    align-items: center;
+                }
+
+                &__progress {
+                    margin: 20px 0;
+                }
+
+                .white-text.ant-progress .ant-progress-text {
+                    color: white;
+                }
+
+                &__button {
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 20px;
+                    height: 50px;
+                    border-radius: 10px;
+                    border: none;
+                    margin: 20px 0;
+                    color: white;
+
+                    @include media("<=md") {
+                        position: relative;
+                        margin-left: 60px;
+
+                    }
+                }
+            }
+
+            .users {
+                margin-top: 20px;
+                display: flex;
+
+                &__user {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+
+                    img {
+                        flex-shrink: 0;
+                        width: 100%;
+                        height: 100%
+                    }
+                }
+
+                &__others {
+                    margin: auto;
+                    //border: 1px solid red;
+                    margin-left: 10px;
+                    font-size: 15px;
+                    font-style: italic;
+                    font-weight: lighter;
+                    text-align: center;
+                }
+            }
+        }
+
+        &__right {
+            padding: 20px;
+            width: 50%;
+
+            @include media("<=md") {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .image {
+                width: 100%;
+                overflow: hidden;
+                height: 300px;
+
+                @include media("<=md") {
+                    display: none;
+                }
+
+                .image-container {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                        border-radius: 10px;
+                        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                    }
+
+                    margin-bottom: 20px;
+                }
+            }
+
+
+            .specifications {
+                font-size: 20px;
+                height: 150px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                @include media("<=md") {
+                    height: 100px;
+                    font-size: 15px;
+                    border: 1px solid red;
+                    padding: 10px;
+                    background-color: $color-third-primary;
+                    border-radius: 7px;
+                }
+
+                &__title {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                }
+
+                &__data {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}

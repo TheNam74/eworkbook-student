@@ -1,0 +1,18 @@
+.books-history {
+  .book-image-container {
+    width: 170px;
+    height: 75%;
+
+    .book-image-container-child {
+      overflow: hidden;
+
+      .book-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+  }
+
+}

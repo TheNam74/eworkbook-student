@@ -1,0 +1,30 @@
+@import '/src/_abstract.scss';
+.footer {
+  background: linear-gradient(
+    180deg,
+    rgba(236, 248, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 10.42%,
+    rgba(255, 255, 255, 0) 87.5%,
+    rgba(236, 248, 255, 0.4) 100%
+  );
+  padding-top: 60px;
+}
+.footer__logo {
+  height: 150px;
+  margin-bottom: 20px;
+}
+.footer__header {
+  // height: 75px;
+  margin-bottom: 20px;
+  // padding-top: 50px;
+  font-size: 23px;
+}
+.footer__link {
+  display: block;
+}
+// .footer__divider {
+//   border-top: 1px solid black;
+// }
+.footer__copyright {
+  text-align: center;
+}

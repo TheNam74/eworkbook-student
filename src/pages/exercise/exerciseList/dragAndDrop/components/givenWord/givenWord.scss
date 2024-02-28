@@ -1,0 +1,17 @@
+.clip-long-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    // width: 100px;
+    // white-space: nowrap;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    
+    // padding: 20px;
+    // font-size: 1.3rem;
+    // margin: 0;
+    // background: white;
+    // resize: horizontal;
+}

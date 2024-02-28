@@ -1,0 +1,61 @@
+//Mỗi khi tạo file scss mới thì dùng lệnh dưới để import các biến chung
+// @import '/index.css';
+
+//Color
+$color-primary: #2c4073;
+$color-second-primary: #ffa54e;
+$color-third-primary: #ffe5b4;
+$color-odd-text: #a0a0a0;
+$color-link: #0070f3;
+$color-background: White;
+
+$color-bad: #F21905;
+$color-middle: #F2B035;
+$color-good: #F27D16;
+$color-excellent: #BAD94A;
+$color-perfect: #48d45d;
+//Font
+$font-family-primary: 'Cabin';
+
+//Font size
+$font-size-base: 1rem;
+$font-size-biggish: 1.75rem;
+//paddings, margins, animations, (most)box shadows,
+
+//utilize
+//button-------
+.button {
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+//color-------
+.primary-color {
+  color: $color-primary;
+}
+
+.second-primary-color {
+  color: $color-second-primary;
+}
+
+.third-primary-color {
+  color: $color-third-primary;
+}
+
+.odd-color{
+  color: $color-odd-text;
+}
+
+//background--------
+.bg-primary {
+  background-color: $color-primary;
+}
+
+.bg-second-primary {
+  background-color: $color-second-primary;
+}
+
+.bg-third-primary {
+  background-color: $color-third-primary;
+}

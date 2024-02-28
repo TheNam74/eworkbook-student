@@ -1,0 +1,19 @@
+@import "../../../../../abstract";
+
+.justifyContentSpaceBetween{
+    justify-content: space-between;
+}
+
+.justifyContentStart{
+    justify-content: start;
+}
+
+.progress-filter .ant-progress-text{
+    text-align: end;
+}
+.progress-filter .ant-progress-success-bg, .ant-progress-bg{
+    background-color: $color-primary;
+}
+.filter-filter {
+    cursor: pointer;
+}

@@ -1,0 +1,13 @@
+@import "../../../../../../abstract";
+
+.black_underline {
+    background-color: black;
+    width: 101%;
+}
+
+.blue_underline {
+    background-color: $color-primary;
+    height: 5px;
+    position: relative;
+    top: -2px;
+}

@@ -1,0 +1,243 @@
+@import '../../abstract';
+@import '../../breakpoints/breakpoints.scss';
+
+.check-point {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 35%;
+    background-color: rgba($color: $color-third-primary, $alpha: 0.4);
+    z-index: 1;
+    border-radius: 5px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    width: 80%;
+    height: 35%;
+    background-color: rgba($color: $color-third-primary, $alpha: 0.4);
+    z-index: 1;
+    border-radius: 5px;
+  }
+
+  @include media('<=xxl') {
+    padding-top: 20px;
+  }
+
+  &>svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__title {
+    width: 100%;
+    max-width: 100%;
+    font-size: 60px;
+    text-shadow: 0 0 3px $color-third-primary;
+
+    @include media('<=xxl') {
+      font-size: 30px;
+    }
+
+    @include media('<=sm') {
+      font-size: 22px;
+    }
+
+    font-weight: 700;
+    color: $color-primary;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    z-index: 2;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__point {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 2rem;
+    z-index: 2;
+
+    button {
+      border: none;
+      background-color: transparent;
+    }
+
+    &--small {
+      display: none;
+
+      @include media('<=sm') {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+      }
+
+      button {
+        border: none;
+        background-color: transparent;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    @include media('<=md') {
+      svg {
+        width: 100px;
+      }
+    }
+
+    @include media('<=sm') {
+      display: none;
+    }
+
+    &__detail {
+      width: 430px;
+      height: 430px;
+      border-radius: 50%;
+      background-color: $color-second-primary;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      margin: 0px 20px;
+
+      @include media("<=xxl") {
+        width: 280px;
+        height: 280px;
+      }
+
+      @include media('<=md') {
+        width: 230px;
+        height: 230px;
+      }
+
+      .text {
+        font-size: 54px;
+        line-height: 80px;
+        font-weight: 600px;
+        -webkit-text-stroke: 1px outside #000;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        @include media("<=xxl") {
+          font-size: 38px;
+          line-height: 62px;
+        }
+
+        @include media('<=md') {
+          font-size: 28px;
+          line-height: 52px;
+        }
+      }
+
+      .point {
+        font-size: 120px;
+        line-height: 160px;
+        font-weight: 700px;
+
+        @include media("<=xxl") {
+          font-size: 66px;
+          line-height: 66px;
+        }
+
+        @include media("<=md") {
+          font-size: 56px;
+          line-height: 56px;
+        }
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+
+    @include media("<=xxl") {
+      justify-content: space-around;
+    }
+
+    button {
+      width: 298px;
+      height: 88px;
+      font-size: 35px;
+      border-radius: 5px;
+
+      &:nth-child(2) {
+        margin-left: 40px;
+      }
+
+      @include media("<=xxl") {
+        width: 160px;
+        height: 45px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+#check-point__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+.background {
+  &--bad {
+    background-color: $color-bad;
+  }
+
+  &--middle {
+    background-color: $color-middle;
+    box-shadow: 0px 0px 10px rgba($color: $color-bad, $alpha: 0.4);
+  }
+
+  &--good {
+    background-color: $color-good;
+    box-shadow: 0px 0px 10px rgba($color: $color-middle, $alpha: 0.4);
+  }
+
+  &--excellent {
+    background-color: $color-excellent;
+    box-shadow: 0px 0px 10px rgba($color: $color-good, $alpha: 0.4);
+  }
+
+  &--perfect {
+    background-color: $color-perfect;
+    box-shadow: 0px 0px 10px rgba($color: $color-excellent, $alpha: 0.4);
+  }
+
+  &--private {
+    background-color: $color-excellent;
+    box-shadow: 0px 0px 10px rgba($color: $color-middle, $alpha: 0.4)
+  }
+}

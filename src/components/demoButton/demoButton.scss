@@ -1,0 +1,49 @@
+@import '../../abstract';
+.demo-button {
+  cursor: pointer;
+  transform: rotate(180deg);
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  &--right {
+    transform: rotate(0deg);
+  }
+}
+
+#darkGroup {
+  fill: $color-primary;
+}
+#lightGroup {
+  fill: white;
+}
+#dark1,
+#light1,
+#dark2 {
+  transition: all 1s ease;
+}
+#light1 {
+  animation: move-light 1s ease infinite;
+}
+#dark1 {
+  animation: move-dark1 1s ease infinite;
+}
+#dark2 {
+  animation: move-dark2 1s ease infinite;
+}
+@keyframes move-light {
+  to {
+    transform: translateX(20%);
+  }
+}
+@keyframes move-dark1 {
+  to {
+    transform: translateX(40%);
+    opacity: 0;
+  }
+}
+@keyframes move-dark2 {
+  to {
+    transform: translateX(0%);
+  }
+}

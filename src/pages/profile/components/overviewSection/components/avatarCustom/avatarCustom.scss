@@ -1,0 +1,12 @@
+@import "../../../../../../abstract";
+
+.avatar_border
+{
+    border:1px solid $color-second-primary;
+    border-radius: 50%;
+}
+.avatar_border:hover
+{
+    border:3px solid $color-second-primary;
+    border-radius: 50%;
+}

@@ -1,0 +1,127 @@
+@import '/src/_abstract.scss';
+.header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  align-items: center;
+}
+.navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  box-shadow: 0 2px 4px -4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar__logo {
+  height: 50px;
+}
+.right--content {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  &__button {
+    background: none;
+    border: none;
+  }
+}
+.navbar__button {
+  width: 100px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.navbar__button:hover {
+  color: $color-second-primary;
+  background-color: $color-third-primary;
+  border-color: $color-second-primary;
+  border-width: 2px;
+  border-style: solid;
+}
+.btn--light {
+  background: $color-primary;
+  color: white;
+}
+.btn--dark {
+  background: white;
+  color: $color-primary;
+}
+.primary--block {
+  color: $color-primary;
+  display: block;
+}
+.language--selector {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: 2px solid transparent;
+}
+.language--selector:hover {
+  border: 2px solid $color-primary;
+}
+.navbar__icon {
+  margin-right: 5px;
+}
+.navbar__link {
+  font-size: large;
+  &.navbar__link--active {
+    color: $color-primary;
+    box-shadow: 0 2px 0 0 $color-primary; /* Border bottom */
+  }
+}
+
+.navbar__search {
+  width: auto;
+  margin-right: 10px;
+  border-radius: 48px;
+}
+.navbar__avatar:hover {
+  border-color: $color-second-primary;
+  border-width: 2px;
+  border-style: solid;
+  cursor: pointer;
+}
+.navbar__avatar {
+  min-width: 32px;
+}
+@media (max-width: 800px) {
+  .navbar__menu {
+    width: 200px;
+  }
+  .anon--link {
+    display: none;
+  }
+  .burger--menu {
+    display: block;
+  }
+  .navbar__link-container {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .navbar__menu {
+    width: 100px;
+  }
+}
+@media (max-width: 430px) {
+  .navbar__search {
+    display: none;
+  }
+}
+@media (min-width: 801px) {
+  .navbar__menu {
+    width: 500px;
+  }
+  .anon--link {
+    display: block;
+  }
+  .burger--menu {
+    display: none;
+  }
+}

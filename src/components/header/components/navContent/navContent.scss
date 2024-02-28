@@ -1,0 +1,6 @@
+@import '/src/_abstract.scss';
+.navbar__dropdown {
+  z-index: 1000000000001;
+  position: fixed;
+  top: 0px;
+}

@@ -1,0 +1,58 @@
+@import "../../abstract";
+.profile__custom .ant-select {
+     border-radius: 30px;
+}
+
+.profile__custom .disabled {
+     background-color: white;
+     color:rgba(0, 0, 0, 0.45)
+}
+
+.profile__custom .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+     border-radius: 8px;
+}
+
+.profile__custom .ant-form-item-label > label{
+     color: $color-primary;
+ }
+
+ .profile__custom .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+     // color:white;
+     background-color:white;
+     // opacity: ;
+     // background-op;
+ }
+
+ .profile__custom .ant-menu{
+     background-color:transparent;
+     color: white;
+ }
+
+
+.profile__custom .ant-menu-light .ant-menu-item:hover{
+     color:$color-primary;
+     background-color: white;
+     opacity: 0.8;
+}
+
+@media (max-width: 768px){
+     .profile__custom .ant-form-item{
+          margin:4px;
+     }
+
+
+}
+
+@media (min-width: 1px){
+     .profile__custom .ant-form-vertical .ant-form-item {
+          flex-direction: row;
+      }
+}
+
+@media (min-width: 576px){
+     .profile__custom .ant-form-vertical .ant-form-item {
+          flex-direction: column;
+      }
+}
+
+
