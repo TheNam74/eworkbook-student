@@ -1,29 +1,27 @@
 {
   "env": {
-      "browser": true,
-      "es2021": true
+    "browser": true,
+    "es2021": true
   },
-  "extends": [
-      "plugin:react/recommended",
-      "airbnb"
-  ],
+  "extends": ["plugin:react/recommended", "airbnb"],
   "parserOptions": {
-      "ecmaFeatures": {
-          "jsx": true
-      },
-      "ecmaVersion": "latest",
-      "sourceType": "module"
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
   },
-  "plugins": [
-      "react"
-  ],
+  "plugins": ["react"],
   "rules": {
     "no-param-reassign": 0,
     "class-methods-use-this": "off",
     "react/prop-types": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/jsx-props-no-spreading": "off",
-    "dot-notation": [2, {"allowKeywords": true, "allowPattern": "^[a-z]+(_[a-z]+)+$"}],
+    "dot-notation": [
+      2,
+      { "allowKeywords": true, "allowPattern": "^[a-z]+(_[a-z]+)+$" }
+    ],
     "max-len": [
       "error",
       {
@@ -42,8 +40,14 @@
     "quotes": "off",
     "linebreak-style": "off",
     "no-nested-ternary": "off",
-    "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"],
+    "no-restricted-syntax": [
+      "error",
+      "ForInStatement",
+      "LabeledStatement",
+      "WithStatement"
+    ],
     "import/no-named-as-default": 0,
-    "no-underscore-dangle":  ["error", { "allow": ["_id"] }]
+    "no-underscore-dangle": ["error", { "allow": ["_id"] }],
+    "comma-dangle": "off"
   }
 }
