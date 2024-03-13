@@ -233,7 +233,7 @@
     "reply": "reply"
   },
   "forgetPassword": {
-    "checkMailBoxMessage": "Email sent, please check your mail box for reset linkkkk!",
+    "checkMailBoxMessage": "Email sent, please check your mail box for reset link!",
     "setNewPassword": "Set your new password!",
     "changePassword": "Change password",
     "theEmailNotRegister": "The email does not registered yet!",
