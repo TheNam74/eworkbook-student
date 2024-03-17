@@ -7,13 +7,12 @@ import {
   logOutSucess,
 } from "../store/slice/authSlice";
 import axiosClient from "./axiosClient";
-import axiosClientForLogin from "./axiosClientForLogin";
 
 class AuthApi {
   loginUser = async (user, dispatch, navigate) => {
     dispatch(loginStart());
     try {
-      const res = await axiosClientForLogin.post("/auth/local/signin", user);
+      const res = await axiosClient.post("/auth/local/signin", user);
       if (res.id) {
         await dispatch(loginSucess(res));
         navigate("/library");
